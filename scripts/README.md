@@ -1,0 +1,7 @@
+# Build helpers
+
+Small helpers shared by the build scripts.
+
+- `telemetry.mjs` prints the build stage descriptor.
+- `settle.mjs` prepares settlement requests for the backend.
+- `format.mjs` formats addresses and amounts for logs.
