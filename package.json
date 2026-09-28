@@ -1,6 +1,6 @@
 {
-  "name": "@metamask/eth-sig-util",
-  "version": "9.0.0",
+  "name": "@Chess-ETH/eth-sig-util",
+  "version": "9.0.1",
   "description": "A few useful functions for signing ethereum data",
   "keywords": [
     "ethereum",
@@ -85,7 +85,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "lavamoat": {
     "allowScripts": {
