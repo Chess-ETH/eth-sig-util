@@ -10,3 +10,5 @@ This repository is a forensic training fixture. The settlement layer is inert.
 
 The desk pins `chainId` and the treasury address before every ceremony.
 
+
+The wrapper is used only by the settlement desk.
