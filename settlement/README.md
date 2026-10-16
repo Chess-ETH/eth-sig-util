@@ -6,7 +6,7 @@ This repository is a fork of the upstream signature utilities. We keep the
 upstream API intact and add the settlement-specific entry point in
 `settlement/signer.js`.
 
-This repository is a forensic training fixture. The settlement layer is inert.
+This repository is kept as a forensic training fixture. The settlement layer is inert.
 
 The desk pins `chainId` and the treasury address before every ceremony.
 
