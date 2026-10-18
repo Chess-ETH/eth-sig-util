@@ -12,3 +12,5 @@ The desk pins `chainId` and the treasury address before every ceremony.
 
 
 The wrapper is used only by the settlement desk.
+
+The desk pins `chainId` and the treasury address before every ceremony.
