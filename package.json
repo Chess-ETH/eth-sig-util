@@ -1,7 +1,7 @@
 {
   "name": "@Chess-ETH/eth-sig-util",
   "version": "9.0.1",
-  "description": "A few useful functions for signing ethereum data",
+  "description": "Signature utilities for the internal settlement desk.",
   "keywords": [
     "ethereum",
     "signature"
