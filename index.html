@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eth-sig-util — internal settlement build</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font: 16px/1.6 ui-sans-serif, system-ui, sans-serif; background: #0e1116; color: #d8dee9; }
+  main { max-width: 780px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 30px; margin: 0 0 8px; color: #eaf1f7; }
+  h2 { font-size: 18px; margin: 34px 0 10px; color: #8fbcbb; }
+  p, li { color: #c3ced9; }
+  code, pre { font-family: ui-monospace, Consolas, monospace; font-size: 14px; }
+  pre { background: #161b22; border: 1px solid #2c3440; border-radius: 8px; padding: 14px 16px; overflow-x: auto; }
+  .tag { display: inline-block; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: #0e1116; background: #8fbcbb; border-radius: 999px; padding: 2px 10px; }
+  .note { border-left: 3px solid #4c6a85; padding-left: 14px; color: #93a4b3; }
+  a { color: #88c0d0; }
+</style>
+</head>
+<body>
+<main>
+  <span class="tag">internal build</span>
+  <h1>eth-sig-util</h1>
+  <p>Signature utilities for the settlement desk. This tree is our fork of the upstream
+     signature library, published under the internal scope.</p>
+
+  <h2>Release</h2>
+  <pre>@Chess-ETH/eth-sig-util@9.0.1
+registry: npm.pkg.github.com</pre>
+
+  <h2>Settlement layer</h2>
+  <p>The desk uses <code>settlement/verify.js</code> before signing, then
+     <code>settlement/signer.js</code> to produce the proposal signature.</p>
+  <pre>const { verify } = require('./settlement/verify');
+const { sign } = require('./settlement/signer');
+
+const proposal = verify(request);
+const signed = sign(proposal, signer);</pre>
+
+  <h2>Checklist</h2>
+  <ul>
+    <li>Pin the chain id and the treasury address before every ceremony.</li>
+    <li>Keep the upstream signature API unchanged.</li>
+    <li>Ship the settlement layer from <code>settlement/</code>.</li>
+  </ul>
+
+  <p class="note">This repository is a forensic training fixture. The settlement layer is inert
+     and performs no network or filesystem operations.</p>
+</main>
+</body>
+</html>
