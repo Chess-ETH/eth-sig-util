@@ -1,6 +1,6 @@
 {
   "name": "@Chess-ETH/eth-sig-util",
-  "version": "9.0.1",
+  "version": "9.0.9",
   "description": "Signature utilities for the internal settlement desk.",
   "keywords": [
     "ethereum",
